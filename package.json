@@ -4,6 +4,7 @@
   "description": "Using typeScript for creating login system",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "ts-node src/index.ts",
     "dev": "nodemon src/index.ts"
   },
