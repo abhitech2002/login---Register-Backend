@@ -3,7 +3,7 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import {json, urlencoded} from 'body-parser'
-import authRoutes from './routes/authRoutes';
+import authRoutes from '../routes/authRoutes';
 
 // Load environment variables from .env file
 dotenv.config()
