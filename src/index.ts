@@ -19,6 +19,10 @@ app.use(urlencoded({extended: true}))
 // Routes
 app.use('/api/auth', authRoutes);
 
+app.get('/api/test', (req, res) => {
+  res.json({ message: 'Backend is working correctly!' });
+});
+
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI || '').then(() => {
     console.log('Connected to MongoDB');
